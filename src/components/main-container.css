@@ -1,0 +1,25 @@
+.main-container {
+  max-width: 100%;
+  margin: 18px auto 50px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 710px) {
+  .main-container {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .main-container {
+    max-width: 1060px;
+  }
+}
+
+@media only screen and (min-width: 1410px) {
+  .main-container {
+    max-width: 1400px;
+  }
+}
