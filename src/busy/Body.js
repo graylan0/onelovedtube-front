@@ -6,7 +6,6 @@ import ReactDOMServer from 'react-dom/server';
 import _ from 'lodash';
 // import classNames from 'classnames';
 import sanitizeHtml from 'sanitize-html';
-import Remarkable from 'remarkable';
 import embedjs from 'embedjs';
 import { jsonParse } from './formatter';
 import sanitizeConfig from './SanitizeConfig';
@@ -16,9 +15,11 @@ import { imageRegex } from './regexHelpers';
 import htmlReady from './steemitHtmlReady';
 import PostFeedEmbed from './PostFeedEmbed';
 import './Body.less';
+const { Remarkable } = require('remarkable');
+
 
 export const remarkable = new Remarkable({
-  html: true, // remarkable renders first then sanitize runs...
+  html: true, // Remarkable renders first then sanitize runs...
   breaks: true,
   linkify: false, // linkify is done locally
   typographer: false, // https://github.com/jonschlinkert/remarkable/issues/142#issuecomment-221546793
