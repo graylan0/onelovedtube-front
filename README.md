@@ -18,7 +18,7 @@ One Love DTube is a community project amplifying creators through curation and d
 
 2. Then go to `src/actions/index.js`. In the `getPosts()` and `getPost()` functions, change the username to whichever Steem account you'd like.
 3. After that it's just a matter of updating the branding and styling however you like
-4. Run application for testing with `npm run` 
+4. Run application for testing with `npm start` 
 5. Install pm2 with `npm install pm2@latest -g` 
 6. Start your react application with pm2 `pm2 start $ pm2 start app.config.json
 7. Congratulations you just installed Steem decentralized application.
