@@ -21,7 +21,7 @@ const { Remarkable } = require('remarkable');
 export const remarkable = new Remarkable({
   html: true, // Remarkable renders first then sanitize runs...
   breaks: true,
-  linkify: false, // linkify is done locally
+  linkify: true, // linkify is done locally
   typographer: false, // https://github.com/jonschlinkert/remarkable/issues/142#issuecomment-221546793
   quotes: '“”‘’',
 });
